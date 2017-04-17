@@ -5,11 +5,11 @@
 
 
 # 1a) Find the genre with the name "Hip Hop/Rap".
-
+  Genre.find_by name: "Hip Hop/Rap"
 
 
 # 1b) Count how many tracks belong to the "Hip Hop/Rap" genre
-
+Track.where(genre_id: 17).count
 
 
 # 2) Find the total amount of time required to listen to all the tracks in the database.
